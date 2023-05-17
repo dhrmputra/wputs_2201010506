@@ -35,7 +35,7 @@
                                 </div>
                                 <div class="form-check ms-4">
                                     <input class="form-check-input" type="radio" name="txJK" id="exampleRadios1" value="Laki-laki" required>
-                                    <label class="form-check-label" for="exampleRadios1>
+                                    <label class="form-check-label" for="exampleRadios1">
                                         Laki - Laki
                                     </label>
                                 </div>
