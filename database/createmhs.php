@@ -7,7 +7,7 @@
         nim VARCHAR (50),
         prodi VARCHAR (255),
         tgl_lahir date,
-        jk VARCHAR(1),
+        jk VARCHAR(255),
         id_mhs VARCHAR(255)
     )"; 
 
