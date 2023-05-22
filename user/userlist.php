@@ -16,7 +16,7 @@
                     <div class="chart-area h-auto">
                         <div class="container konten">
                             <?php $stt = mysqli_query($cnn, "SELECT * FROM tbUSER");
-                            echo mysqli_num_rows($stt); ?>
+                            ?>
                             <table class="table text-center m-auto">
                                 <thead class="border-bottom">
                                     <tr>
