@@ -7,6 +7,8 @@
 -- Versi server: 10.4.28-MariaDB
 -- Versi PHP: 8.2.4
 
+
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
@@ -19,14 +21,15 @@ SET time_zone = "+00:00";
 
 --
 -- Database: `db_mahasiswa`
---
+-- 
 
 -- --------------------------------------------------------
 
 --
 -- Struktur dari tabel `tbmhs`
 --
-
+create Database db_mahasiswa;\
+  
 CREATE TABLE `tbmhs` (
   `id` int(11) NOT NULL,
   `nama` varchar(30) DEFAULT NULL,
