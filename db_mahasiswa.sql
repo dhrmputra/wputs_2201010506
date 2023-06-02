@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 -- Struktur dari tabel `tbmhs`
 --
-create Database db_mahasiswa;\
+create Database db_mahasiswa;
   
 CREATE TABLE `tbmhs` (
   `id` int(11) NOT NULL,
