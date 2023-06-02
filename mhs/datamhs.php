@@ -17,7 +17,7 @@ if (isset($_POST["act"])) {
                 $tgl_lahir = $_POST["txTGL"];
                 $jk = $_POST["txJK"];
                 $id_mhs = md5($nama);
-                $sql = "INSERT INTO tbMHS(nama, nim, prodi, tgl_lahir, jk, id_mhs) VALUES('$nama', '$nim', '$prodi', '$tgl_lahir', '$jk', '$id_mhs');";
+                $sql = "INSERT INTO tbmhs(nama, nim, prodi, tgl_lahir, jk, id_mhs) VALUES('$nama', '$nim', '$prodi', '$tgl_lahir', '$jk', '$id_mhs');";
                 $hasil = mysqli_query($cnn, $sql);
                 if ($hasil) {
                     $footer = "<script>
@@ -48,7 +48,7 @@ if (isset($_POST["act"])) {
                 $tgl_lahir = $_POST["txTGL"];
                 $jk = $_POST["txJK"];
                 $id_mhs = $_POST["id_mhs"];
-                $sql = "UPDATE tbMHS SET nama='$nama', nim='$nim', prodi='$prodi', tgl_lahir='$tgl_lahir', jk='$jk' WHERE id_mhs='$id_mhs';";
+                $sql = "UPDATE tbmhs SET nama='$nama', nim='$nim', prodi='$prodi', tgl_lahir='$tgl_lahir', jk='$jk' WHERE id_mhs='$id_mhs';";
                 $hasil = mysqli_query($cnn, $sql);
                 if ($hasil) {
                     $footer = "<script>
@@ -74,7 +74,7 @@ if (isset($_POST["act"])) {
             break;
         case "destroy":
             $id_mhs = $_POST['id_mhs'];
-            $sql = "DELETE FROM tbMHS WHERE id_mhs='$id_mhs';";
+            $sql = "DELETE FROM tbmhs WHERE id_mhs='$id_mhs';";
             $hasil = mysqli_query($cnn, $sql);
             if ($hasil) {
                 $footer = "<script>
