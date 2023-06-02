@@ -7,7 +7,7 @@
                         <div class="col-sm-6 text-left">
                             <h5 class="card-category">List User</h5>
                             <h2 class="card-title">Total Daftar Mahasiswa <b>
-                                    <?php $stt = mysqli_query($cnn, "SELECT * FROM tbMHS");
+                                    <?php $stt = mysqli_query($cnn, "SELECT * FROM tbmhs");
                                     echo mysqli_num_rows($stt); ?></b></h2>
                         </div>
                     </div>
@@ -17,7 +17,7 @@
                         <div class="container konten">
                             <?php
                             $id_mhs = $_GET["p1"];
-                            $sql = "SELECT * FROM tbMHS tu WHERE tu.id_mhs='$id_mhs';";
+                            $sql = "SELECT * FROM tbmhs tu WHERE tu.id_mhs='$id_mhs';";
                             $hasil = mysqli_query($cnn, $sql);
                             if (mysqli_num_rows($hasil) > 0) {
                                 $h = mysqli_fetch_assoc($hasil);
