@@ -43,13 +43,13 @@
                                         <label for="floatingInput">Tanggal Lahir</label>
                                     </div>
                                     <div class="form-check ms-4">
-                                        <input class="form-check-input" type="radio" name="txJK" id="exampleRadios1" value="L" value="<?= $h["jk"] ?>" checked>
+                                        <input class="form-check-input" type="radio" name="txJK" id="exampleRadios1" value="Laki-laki" <?php if ($h['jk'] == 'Laki-laki') echo 'checked';?>>
                                         <label class="form-check-label" for="exampleRadios1">
                                             Laki - Laki
                                         </label>
                                     </div>
                                     <div class="form-check  ms-4">
-                                        <input class="form-check-input" type="radio" name="txJK" id="exampleRadios2" value="P" value="<?= $h["jk"] ?>">
+                                        <input class="form-check-input" type="radio" name="txJK" id="exampleRadios2" value="Perempuan" <?php if ($h['jk'] == 'Perempuan') echo 'checked';?>>
                                         <label class="form-check-label" for="exampleRadios2">
                                             Perempuan
                                         </label>
