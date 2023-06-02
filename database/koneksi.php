@@ -1,9 +1,4 @@
 <?php
-    define("DBHOST","localhost");
-    define("DBUSER","root");
-    define("DBPASS","");
-    define("DBNAME","db_mahasiswa");
-    define("DBPORT","3306");
     $cnn = mysqli_connect(DBHOST,DBUSER,DBPASS,DBNAME,DBPORT) or die("Error");
     /*
     if($cnn){
