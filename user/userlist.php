@@ -7,7 +7,7 @@
                         <div class="col-sm-6 text-left">
                             <h5 class="card-category">List User</h5>
                             <h2 class="card-title">Total Daftar User <b>
-                                    <?php $stt = mysqli_query($cnn, "SELECT * FROM tbUSER");
+                                    <?php $stt = mysqli_query($cnn, "SELECT * FROM tbuser");
                                     echo mysqli_num_rows($stt); ?></b></h2>
                         </div>
                     </div>
@@ -15,7 +15,7 @@
                 <div class="card-body">
                     <div class="chart-area h-auto">
                         <div class="container konten">
-                            <?php $stt = mysqli_query($cnn, "SELECT * FROM tbUSER");
+                            <?php $stt = mysqli_query($cnn, "SELECT * FROM tbuser");
                             ?>
                             <table class="table text-center m-auto">
                                 <thead class="border-bottom">
